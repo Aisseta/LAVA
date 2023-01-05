@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #242424;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: 15px;
+  background-image: url(./plage_noir.png);
+  background-position: center center;
+  background-size: cover;
+  height: 44em; 
+  margin-bottom: 100px;
+  
+}
+.About{
+   grid-column: 12/14;
+   grid-row: 4/7;
+   text-align: center;
+   color:white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   letter-spacing: 5px;
+   font-size: 17px;
+   padding: 6px;
+   align-self: center;
+  }
+
+.Articles{
+    grid-column: 14/16;
+    grid-row: 4/7;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    font-size: 17px;
+    padding: 6px;
+    align-self: center;
+}
+.Subscribe{
+    grid-column: 16/19;
+    grid-row: 4/7;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    border: solid 2px;   
+    font-size: 17px;
+    padding: 6px;
+    width: 125px;
+    align-self: center;
+
+}
+.Logo{
+    grid-column: 1;
+    grid-row: 3/6;
+    font-size: 67px;
+    text-align: right;
+   
+}
+.Title{
+    grid-column: 3/10;
+    grid-row: 23/33;
+    color: white;
+
+}
+#title{
+    font-family: Georgia;
+    font-size: 110px;
+    font-weight: 90;
+    letter-spacing: 2px;
+}
+#Subtitle{
+    color: cyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+
+}
+.HR{
+    height: 2px;
+    width: 40px;
+    background-color: white;
+}
+/* partie 2 - Slow Travelling*/
+.container2{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows:15px;
+    height: 18em;
+    padding-bottom: 15em;
+    padding-top: 100px;
+
+}
+.Title2 {
+    grid-column: 4/9;
+    grid-row: 1/8;
+    text-align: center;
+    color: white;
+    
+}
+#title2{
+    font-size: 70px;
+  
+}
+#subtitle2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:  20px;
+    color: #838383;
+    letter-spacing: 3px;
+}
+.hr1{
+    margin: 20px auto;
+    width: 50px;
+    align-self: center;
+    height: 1px;
+    background-color: white;    
+    
+}
+.paragraphe{
+    grid-column: 4/9;
+    grid-row: 8/15;
+    font-family: Arial;
+    font-size:  14px;
+    color: #838383;
+    text-align: center;
+    line-height: 2.5em;
+    letter-spacing: 2px;
+    padding-bottom: 150px ;
+}
+/*Partie 3 - Carrousel d'images*/
+.container3{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: 15px;
+    background-color: #3b3939e0;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    height: 45em;
+}
+.Title3{
+    grid-column: 4/9;
+    grid-row:1/9;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#title3{
+    font-size: 60px;
+    color: white;   
+    letter-spacing: 4px;
+}
+#subtitle3{
+    color: #838383;
+    font-family: Gill Sans;
+}
+.hr2{
+    margin: 9px auto;
+    width: 40px;
+    align-self: center;
+    background-color: white;
+    height: 1px;
+}
+/* IMAGES*/
+#image1{
+    grid-column: 2/5;
+    grid-row:10/48;
+    background-image: url(./tunza_port_flye.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    height: 35em;
+    box-shadow: 9px 9px 9px rgb(32,32,32);
+    margin: 15px;
+}
+#image2{
+    grid-column: 5/8;
+    grid-row:10/48;
+    background-image: url(./timort_bridge_flye.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    height: 35em;
+    box-shadow: 9px 10px 9px rgb(32, 32, 32);
+    margin: 15px;
+}
+#image3{
+    grid-column: 8/11;
+    grid-row: 10/48;
+    background-image: url(./lava_embded.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    height: 35em;
+    box-shadow: 9px 10px 9px rgb(32, 32, 32);
+    margin: 15px;
+}
+.TitleA{
+    grid-column: 2/5;
+    grid-row: 40;
+    color: white;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.TitleB{
+    grid-column: 5/8;
+    grid-row:40;
+    color: white ;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+.TitleC{
+    grid-column: 8/11;
+    grid-row: 40;
+    color: white;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 20px;
+    letter-spacing: 2px;    
+}
+.tiretA{
+    margin: 10px auto;
+    background-color: white;
+    height: 1px;
+    width: 40px;
+}
+.tiretB{
+    margin: 10px auto;
+    background-color: white;
+    height: 1px;
+    width: 40px;
+}
+.tiretC{
+    margin: 10px auto;
+    background-color: white;
+    height: 1px;
+    width: 40px;
+}
+/*Partie 4 - Subscribe*/
+.container4{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows:15px;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    height: 15em;
+}
+#title4{
+    grid-column: 4/9;
+    grid-row: 1/5;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 45px;
+}
+#subtitle4{
+    grid-column: 4/9;
+    grid-row:5/8;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #838383;
+    font-weight: 100;
+    font-size: 13px;
+    font-family: Gill Sans;    
+}
+.hr4{
+    visibility: hidden;
+}
+input{
+    size: 4em;
+    grid-column: 4/9;
+    grid-row: 8/12;
+    padding: 20px;
+    font-size: 13px;
+    font-family: Gill Sans;
+    background-color:#525252;   
+    border:#838383;
+}
+.Submit{
+    grid-column: 6;
+    grid-row: 14/16;
+    background-color:#2d2c2ce0;
+    border-color: white;
+    border: solid 1px;
+    color: rgba(255, 255, 255, 0.837);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;  
+    align-self:center;
+    letter-spacing: 2px;
+    
+}
+/*Partie 5 - Fin*/
+.container5{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows:15px;
+    background-color: #3b3939e0;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 0.875);
+    height: 4em;
+    
+}
+.Logo2{
+    grid-column: 2;
+    grid-row: 1/5; 
+    font-size: 50px;  
+    padding-right: 10;
+}
+.About2{
+    grid-column: 8;
+    grid-row: 3/4; 
+    font-size: 12px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    grid-gap: 1;
+    text-align: center ;
+}
+.Articles2{
+    grid-column: 9;
+    grid-row: 3/4; 
+    font-size: 12px; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    grid-gap: 1;
+}
+.Subscribe2{
+    grid-column: 10;
+    grid-row: 3/4; 
+    font-size: 12px; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    grid-gap: 1;
+}
+/* Version mobile -  MediaQueries*/
+@media screen and (max-width:767px){
+    .container, .container2, .container3, .container4, .container5 {
+        width: 767px;
+    }
+    .container{
+        margin-bottom:40em;
+        height: 48em;
+    }
+    .Title{
+        grid-column: 1/18;
+        margin-left: 20px;
+        grid-row: 23/39;  
+    }
+    #title{
+        font-size: 170px;
+
+    }
+    .About, .Logo, .Articles, .Subscribe {
+        display: none;
+    }
+    .burger{
+        background-image: url(./1024px-Hamburger_icon_white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        grid-column: 16/18;
+        grid-row:2/7;
+        margin-right: 10px;
+    }
+    #Subtitle{
+        letter-spacing: 11px;
+        font-size: 38px;
+    }
+    .HR{
+        width: 120px;
+        margin-top: 30px;
+        background-color: #838383;
+    }
+    .container2{
+        height: 48em;
+        padding-bottom: 5em;
+        padding-top: 3em;   
+    }
+    .Title2{
+        grid-column:2/11;
+        grid-row: 1/12;
+    }
+    #title2{
+        font-size: 80px;
+    }
+    #subtitle2{
+        font-size: 37px;
+        letter-spacing: 5px;
+        padding-top: 1em;
+    }
+    .hr1{
+        width:  8em;
+        margin: 30px auto;
+
+    }
+    .paragraphe{
+        font-size:  34px;
+        text-align: left;
+        grid-column: 2/11;
+        grid-row: 12/39;
+        padding: 10px;
+        line-height: 2;
+        
+    }
+    .container3{
+        height:247em ;
+        background-color: #242424;
+
+    }
+    .Title3{
+        grid-column:2/11;
+        grid-row: 1/14; 
+    }
+        
+    #title3{
+        font-size: 80px;
+    }
+    #subtitle3{
+        font-size: 37px;
+        letter-spacing: 5px;
+        padding-top: 1em;
+    }
+    .hr2{
+        width:  8em;
+        margin: 30px auto;
+    }
+    #image1{
+        grid-row: 15/97;
+        grid-column: 1/12;
+        height: 75em;
+        margin: 37px;
+
+    }
+    #image2{
+        
+        grid-row: 98/181;
+        grid-column: 1/12;
+        height: 75em;
+        margin: 37px;
+    }
+    #image3{
+        grid-row: 181/264;
+        grid-column: 1/12;
+        height: 75em;
+        margin: 37px;
+    }
+    .TitleA{
+       
+        grid-row: 84;
+        grid-column: 1/12;
+        font-size: 46px;
+    }
+    .TitleB{
+       
+        grid-row: 168;
+        grid-column: 1/12;
+        font-size: 46px;
+    }
+    .TitleC{ 
+        grid-row: 248;
+        grid-column: 1/12;
+        font-size: 46px;
+    }
+    .tiretA{
+        grid-row: 96;
+        grid-column: 1/12;
+    }
+    .tiretB{
+        grid-row: 180;
+        grid-column: 1/12;
+    }
+    .tiretC{
+        grid-row: 250;
+        grid-column: 1/12;
+    }
+    .container4{
+       height: 25em;
+    }
+    #title4{
+        grid-column:2/11;
+        grid-row: 1/7;
+        font-size: 80px;
+    }
+    #subtitle4{
+        grid-column:2/11;
+        grid-row: 8;
+        font-size: 37px;
+        color: #838383;
+    }
+    .hr4{
+        grid-column:2/11;
+        grid-row: 12;
+        margin: 10px auto;
+        width: 80px;
+        align-self: center;
+        background-color: white;
+        height: 1px;
+    }
+    input{
+        grid-row:15/20;
+        grid-column: 2/11;
+        font-size: 34px;
+    }
+    .Submit{
+        grid-column: 2/11;
+        grid-row: 22/27;
+        font-size: 34px;
+        letter-spacing: 10px;
+    }
+    .container5{
+        height: 11em;
+    }
+    .Logo2{
+        visibility: hidden;
+    }
+    .About2{
+        grid-column: 6/7;
+        grid-row: 2;
+        font-size: 32px;
+        color: #838383;
+        letter-spacing: 4px;
+
+    }
+    .Articles2{
+        grid-column:6/7;
+        grid-row:6/7 ;
+        font-size: 32px;
+        color: #838383;
+        letter-spacing: 4px;
+
+    }
+    .Subscribe2{
+        grid-column: 6/7;
+        grid-row:10/12;
+        font-size: 32px;
+        color: #838383;
+        letter-spacing: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
